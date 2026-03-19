@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account | TaskBar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-50">
+
+    <div id="main-box" class="max-w-sm w-full bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2 text-center">Delete Account</h2>
+        <p class="text-[10px] text-gray-400 text-center mb-6 uppercase tracking-widest">VKNOVA TECHGROUPS Security Portal</p>
+        
+        <form id="delete-form" class="space-y-4">
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Registered Email</label>
+                <input type="email" name="data[Email]" placeholder="your@email.com" 
+                       class="w-full border border-gray-300 rounded-md p-3 outline-none focus:ring-2 focus:ring-red-500" required>
+            </div>
+
+            <input type="hidden" name="data[Date]" id="timestamp-hidden">
+            <input type="hidden" name="data[Subject]" value="Delete Account">
+            <input type="hidden" name="data[Status]" value="Pending">
+
+            <div class="flex items-start gap-2 bg-red-50 p-3 rounded-md">
+                <input type="checkbox" id="confirm-check" class="mt-1" required>
+                <label for="confirm-check" class="text-xs text-red-800">
+                    I confirm that I want to delete my data. This cannot be undone.
+                </label>
+            </div>
+
+            <button type="submit" id="sub-btn" class="w-full bg-red-600 text-white py-3 rounded-md font-semibold hover:bg-red-700 transition">
+                Request Permanent Deletion
+            </button>
+        </form>
+
+        <div id="done-msg" class="hidden text-center py-4">
+            <p class="text-green-600 font-bold text-lg">✔ Request Logged</p>
+            <p class="text-gray-500 text-xs mt-2">Request ID: <span id="display-time"></span></p>
+            <p class="text-gray-400 text-[10px] mt-4">We will process this within 30 days.</p>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('delete-form');
+        const btn = document.getElementById('sub-btn');
+        const msg = document.getElementById('done-msg');
+
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+
+            if (confirm("Final Warning: Are you sure you want to delete your TaskBar account?")) {
+                btn.innerHTML = "Logging Request...";
+                btn.disabled = true;
+
+                // --- TIMESTAMP LOGIC ---
+                const now = new Date();
+                const timeString = now.toLocaleString(); // Format: 7/3/2026, 9:56:41 PM
+                document.getElementById('timestamp-hidden').value = timeString;
+                document.getElementById('display-time').innerText = timeString;
+                // -----------------------
+
+                fetch('https://sheetdb.io/api/v1/kxxerkb4e21av', {
+                    method : 'POST',
+                    body: new FormData(form),
+                }).then(res => res.json()).then(() => {
+                    form.classList.add('hidden');
+                    msg.classList.remove('hidden');
+                }).catch(err => {
+                    alert('Network error. Please try again.');
+                    btn.innerHTML = "Request Permanent Deletion";
+                    btn.disabled = false;
+                });
+            }
+        });
+    </script>
+</body>
+</html>

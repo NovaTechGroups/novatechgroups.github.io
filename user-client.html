@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerodrop User Client | VKNOVA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-white font-['Inter'] text-[#3c4043]">
+
+    <nav class="px-8 py-6 flex items-center justify-between">
+        <a href="aerodrop.html" class="text-orange-500 flex items-center font-medium hover:underline">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            Back to Main
+        </a>
+        <img src="aero.png" alt="Aerodrop Logo" class="h-8 w-auto">
+    </nav>
+
+    <header class="max-w-7xl mx-auto px-6 py-20 flex flex-col lg:flex-row items-center gap-16">
+        <div class="lg:w-1/2 text-left" data-aos="fade-right">
+            <span class="text-orange-500 font-bold uppercase tracking-widest text-sm">Consumer Platform</span>
+            <h1 class="text-5xl md:text-7xl font-normal text-[#202124] mt-4 mb-6 leading-tight">
+                Your favorite meals, <br><span class="text-orange-500 font-semibold">delivered faster.</span>
+            </h1>
+            <p class="text-lg text-[#5f6368] mb-10 leading-relaxed max-w-xl">
+                Experience the premium food delivery ecosystem of Thanjavur. Aerodrop combines hyper-local logistics with a seamless digital interface for the modern diner.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <button class="bg-orange-500 text-white px-10 py-4 rounded-2xl font-bold hover:bg-orange-600 transition-all shadow-xl shadow-orange-100">
+                    Get Started
+                </button>
+                
+            </div>
+        </div>
+
+        <div class="lg:w-1/2 relative" data-aos="fade-left">
+            <div class="rounded-[2.5rem] overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=1000" class="w-full h-[450px] object-cover" alt="Delicious Food">
+            </div>
+            
+            <div class="glass-card absolute -bottom-6 -left-6 md:-left-12 p-6 rounded-3xl shadow-2xl max-w-[240px]" data-aos="zoom-in" data-aos-delay="400">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                    <span class="text-sm font-bold text-gray-800">Order Out for Delivery</span>
+                </div>
+                <p class="text-xs text-gray-500">Arriving at your doorstep in <span class="text-orange-500 font-bold">8 mins</span></p>
+            </div>
+
+            <div class="glass-card absolute -top-8 -right-4 p-5 rounded-2xl shadow-xl hidden md:block" data-aos="zoom-in" data-aos-delay="600">
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-400 text-xl">★</span>
+                    <span class="font-bold text-gray-800">4.9/5</span>
+                </div>
+                <p class="text-[10px] text-gray-400 uppercase tracking-tighter">Thanjavur's Top Rated</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 border-y border-gray-50">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-3xl font-bold text-[#202124]">50+</p>
+                <p class="text-sm text-gray-500">Partner Hotels</p>
+            </div>
+            <div>
+                <p class="text-3xl font-bold text-[#202124]">15m</p>
+                <p class="text-sm text-gray-500">Avg. Delivery Time</p>
+            </div>
+            <div>
+                <p class="text-3xl font-bold text-[#202124]">Secure</p>
+                <p class="text-sm text-gray-500">UPI Payments</p>
+            </div>
+            <div>
+                <p class="text-3xl font-bold text-[#202124]">24/7</p>
+                <p class="text-sm text-gray-500">Support</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-normal text-center mb-20 text-[#202124]">Engineered for <span class="text-orange-500">Excellence</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                <div class="group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-500 transition-colors duration-300">
+                        <span class="text-2xl group-hover:scale-110 transition-transform">🚀</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Hyper-Local Speed</h3>
+                    <p class="text-gray-500 leading-relaxed">Our proprietary routing algorithm ensures your food travels the shortest path from kitchen to table.</p>
+                </div>
+                <div class="group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-500 transition-colors duration-300">
+                        <span class="text-2xl group-hover:scale-110 transition-transform">💳</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Instant Settlement</h3>
+                    <p class="text-gray-500 leading-relaxed">Integrated with VKNOVA's automated verification for split-second payment confirmation.</p>
+                </div>
+                <div class="group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-orange-500 transition-colors duration-300">
+                        <span class="text-2xl group-hover:scale-110 transition-transform">📍</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Precision Tracking</h3>
+                    <p class="text-gray-500 leading-relaxed">High-fidelity GPS tracking provides meter-perfect accuracy for every delivery in Thanjavur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-gray-400 text-sm border-t border-gray-50">
+        <p>© 2026 VKNOVA TECHGROUPS (OPC) PRIVATE LIMITED.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

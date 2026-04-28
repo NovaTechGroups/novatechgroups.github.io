@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerodrop Logistics Client | VKNOVA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .map-bg {
+            background-color: #f8fafc;
+            background-image: url("https://www.transparenttextures.com/patterns/pinstriped-suit.png");
+        }
+        .stats-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-white font-['Inter'] text-[#3c4043]">
+
+    <nav class="px-8 py-6 flex items-center justify-between border-b border-gray-50">
+        <a href="aerodrop.html" class="text-blue-600 flex items-center font-medium hover:underline">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            Back to Ecosystem
+        </a>
+        <img src="aerodp.png" alt="Aerodrop Partner" class="h-8 w-auto">
+    </nav>
+
+    <header class="max-w-7xl mx-auto px-6 py-20 flex flex-col lg:flex-row items-center gap-16">
+        <div class="lg:w-1/2" data-aos="fade-right">
+            <span class="text-blue-600 font-bold uppercase tracking-widest text-sm">Logistics Infrastructure</span>
+            <h1 class="text-5xl md:text-7xl font-normal text-[#202124] mt-4 mb-6 leading-tight">
+                Empowering the <br><span class="text-blue-600 font-semibold">moving fleet.</span>
+            </h1>
+            <p class="text-lg text-[#5f6368] mb-10 leading-relaxed max-w-xl">
+                The Aerodrop Delivery Partner platform provides real-time route optimization, automated payout settlements, and high-precision GPS synchronization for our logistics network.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <button class="bg-blue-600 text-white px-10 py-4 rounded-2xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-100">
+                    Join the Fleet
+                </button>
+            </div>
+        </div>
+
+        <div class="lg:w-1/2 relative w-full" data-aos="fade-left">
+            <div class="map-bg rounded-[2.5rem] h-[450px] w-full border border-gray-100 shadow-inner flex items-center justify-center relative overflow-hidden">
+                <svg class="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 100 100">
+                    <path d="M10 50 Q 50 10 90 50" stroke="#2563eb" stroke-width="0.5" fill="none" />
+                    <path d="M20 80 Q 60 40 80 20" stroke="#2563eb" stroke-width="0.5" fill="none" />
+                </svg>
+                
+                <div class="stats-card absolute top-10 left-10 p-5 rounded-2xl shadow-xl border border-blue-50" data-aos="zoom-in" data-aos-delay="300">
+                    <p class="text-[10px] uppercase font-bold text-gray-400">Current Earnings</p>
+                    <p class="text-2xl font-bold text-gray-900">₹1,450.00</p>
+                    <div class="mt-2 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                        <span class="text-xs text-green-600 font-medium">8 Orders Completed</span>
+                    </div>
+                </div>
+
+                <div class="stats-card absolute bottom-10 right-10 p-5 rounded-2xl shadow-xl border border-blue-50 max-w-[200px]" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="p-2 bg-blue-100 rounded-lg text-blue-600">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-width="2"></path></svg>
+                        </div>
+                        <span class="text-sm font-bold">Smart Route</span>
+                    </div>
+                    <p class="text-xs text-gray-500">Optimized for minimal fuel consumption and maximum speed.</p>
+                </div>
+
+                <div class="relative">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full animate-ping absolute opacity-20"></div>
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center relative shadow-lg">
+                        <img src="aerodp.png" class="w-6 h-6 object-contain brightness-0 invert" alt="Icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 bg-gray-50/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-normal text-center mb-20 text-[#202124]">Built for <span class="text-blue-600 font-semibold">Reliability</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="bg-white p-10 rounded-3xl border border-gray-100 hover:shadow-lg transition-all" data-aos="fade-up">
+                    <div class="text-blue-600 mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-width="2"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Real-time Analytics</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Track every kilometer and every rupee. Our dashboard provides transparent data on performance and delivery history.</p>
+                </div>
+
+                <div class="bg-white p-10 rounded-3xl border border-gray-100 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-600 mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Instant Settlements</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">No waiting for weekly cycles. Partner earnings are processed through automated verification for faster access to funds.</p>
+                </div>
+
+                <div class="bg-white p-10 rounded-3xl border border-gray-100 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-600 mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-width="2"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Dynamic Dispatch</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Our AI-driven dispatcher matches the right order with the right partner to minimize idle time and maximize income.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-gray-400 text-sm border-t border-gray-50">
+        <p>© 2026 VKNOVA TECHGROUPS (OPC) PRIVATE LIMITED.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

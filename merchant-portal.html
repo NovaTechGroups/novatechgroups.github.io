@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerodrop Hotel Portal | VKNOVA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .merchant-grid {
+            background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .order-card:hover { border-color: #10b981; }
+    </style>
+</head>
+<body class="bg-[#fcfcfc] font-['Inter'] text-[#3c4043]">
+
+    <nav class="px-8 py-6 flex items-center justify-between bg-white border-b border-gray-100 sticky top-0 z-50">
+        <a href="aerodrop.html" class="text-green-600 flex items-center font-medium hover:underline">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            Back to Ecosystem
+        </a>
+        <div class="flex items-center gap-3">
+            <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Enterprise Mode</span>
+            <img src="aeroht.png" alt="Aerodrop Hotel" class="h-8 w-auto">
+        </div>
+    </nav>
+
+    <header class="max-w-7xl mx-auto px-6 py-20 flex flex-col lg:flex-row items-center gap-16">
+        <div class="lg:w-1/2" data-aos="fade-right">
+            <span class="text-green-600 font-bold uppercase tracking-widest text-sm">Merchant Portal</span>
+            <h1 class="text-5xl md:text-7xl font-normal text-[#202124] mt-4 mb-6 leading-tight">
+                Grow your hotel <br><span class="text-green-600 font-semibold">with data.</span>
+            </h1>
+            <p class="text-lg text-[#5f6368] mb-10 leading-relaxed max-w-xl">
+                The Aerodrop Hotel dashboard gives you total control over your kitchen. Manage incoming orders, track daily revenue, and automate your merchant payouts with VKNOVA’s secure infrastructure.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <button class="bg-green-600 text-white px-10 py-4 rounded-2xl font-bold hover:bg-green-700 transition-all shadow-xl shadow-green-100">
+                    Register Hotel
+                </button>
+            </div>
+        </div>
+
+        <div class="lg:w-1/2 w-full" data-aos="fade-left">
+            <div class="bg-white rounded-[2.5rem] border border-gray-100 shadow-2xl p-8 merchant-grid">
+                <div class="flex justify-between items-center mb-8">
+                    <h3 class="font-bold text-gray-800 text-lg">Sales Overview</h3>
+                    <span class="bg-green-50 text-green-700 text-[10px] font-bold px-3 py-1 rounded-full uppercase">Live Sync</span>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="order-card p-4 bg-white border border-gray-100 rounded-2xl flex justify-between items-center transition-all">
+                        <div class="flex gap-4 items-center">
+                            <div class="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center">🍛</div>
+                            <div>
+                                <p class="text-sm font-bold text-gray-800">Chicken Biryani x2</p>
+                                <p class="text-[10px] text-gray-400">Order #VK-8829</p>
+                            </div>
+                        </div>
+                        <p class="text-sm font-bold text-green-600">₹440.00</p>
+                    </div>
+
+                    <div class="order-card p-4 bg-white border border-gray-100 rounded-2xl flex justify-between items-center transition-all">
+                        <div class="flex gap-4 items-center">
+                            <div class="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center">🥤</div>
+                            <div>
+                                <p class="text-sm font-bold text-gray-800">Rose Milk x4</p>
+                                <p class="text-[10px] text-gray-400">Order #VK-8831</p>
+                            </div>
+                        </div>
+                        <p class="text-sm font-bold text-green-600">₹160.00</p>
+                    </div>
+
+                    <div class="mt-8 pt-8 border-t border-gray-100">
+                        <div class="flex justify-between text-xs text-gray-400 mb-2 font-bold uppercase">
+                            <span>Today's Total</span>
+                            <span>Payout Pending</span>
+                        </div>
+                        <div class="flex justify-between items-end">
+                            <p class="text-3xl font-bold text-gray-900">₹12,450</p>
+                            <p class="text-sm text-green-600 font-bold">Verified ✓</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-normal text-center mb-20 text-[#202124]">Enterprise <span class="text-green-600 font-semibold">Management</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                <div class="group" data-aos="fade-up">
+                    <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors duration-300">
+                        <svg class="w-6 h-6 text-green-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Live Menu Control</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Turn dishes on or off instantly based on your kitchen's stock. Update prices and add seasonal specials in seconds.</p>
+                </div>
+
+                <div class="group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors duration-300">
+                        <svg class="w-6 h-6 text-green-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Automated Payouts</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Powered by VKNOVA Automation. Every successful delivery is verified and added to your wallet for instant daily settlements.</p>
+                </div>
+
+                <div class="group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors duration-300">
+                        <svg class="w-6 h-6 text-green-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sales Analytics</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">View which items are trending in Thanjavur. Use our data to optimize your menu and increase your daily revenue.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-gray-400 text-sm border-t border-gray-50">
+        <p>© 2026 VKNOVA TECHGROUPS (OPC) PRIVATE LIMITED.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>

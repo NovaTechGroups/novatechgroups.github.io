@@ -7,11 +7,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .app-icon { object-fit: contain; width: 100%; height: 100%; }
+        .badge-link:hover { transform: translateY(-2px); filter: brightness(1.1); }
+    </style>
 </head>
 <body class="bg-white font-['Inter'] text-[#3c4043]">
 
     <nav class="px-8 py-6 flex items-center">
-        <a href="index.html" class="text-[#1a73e8] flex items-center font-medium">
+        <a href="index.html" class="text-[#1a73e8] flex items-center font-medium hover:underline">
             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             Back to Corporate
         </a>
@@ -30,30 +34,39 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <div class="p-8 border border-gray-100 rounded-3xl bg-[#fff9f4] hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="100">
-                <div class="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center mb-6">
-                    <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-width="2"></path></svg>
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm p-2">
+                    <img src="aero.png" alt="Aerodrop User" class="app-icon">
                 </div>
-                <h2 class="text-2xl font-semibold mb-4">Aerodrop</h2>
+                <h2 class="text-2xl font-semibold mb-4 text-[#202124]">Aerodrop</h2>
                 <p class="text-sm text-[#5f6368] mb-8 leading-relaxed">The main consumer portal. Featuring smart hotel browsing, secure payment integration, and real-time order tracking.</p>
-                <span class="px-4 py-2 bg-orange-500 text-white text-xs font-bold rounded-full">User Client</span>
+                
+                <a href="user-client.html" class="badge-link inline-block px-6 py-2.5 bg-orange-500 text-white text-xs font-bold rounded-full transition-all shadow-md">
+                    User Client
+                </a>
             </div>
 
             <div class="p-8 border border-gray-100 rounded-3xl bg-[#f4f9ff] hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="200">
-                <div class="w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
-                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-width="2"></path></svg>
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm p-2">
+                    <img src="aerodp.png" alt="Aerodrop Partner" class="app-icon">
                 </div>
-                <h2 class="text-2xl font-semibold mb-4">Aerodrop Delivery Partner</h2>
+                <h2 class="text-2xl font-semibold mb-4 text-[#202124]">Aerodrop Partner</h2>
                 <p class="text-sm text-[#5f6368] mb-8 leading-relaxed">The logistics backbone. Real-time route optimization and automated earnings tracking for our fleet.</p>
-                <span class="px-4 py-2 bg-blue-600 text-white text-xs font-bold rounded-full">Logistics Client</span>
+                
+                <a href="logistics-client.html" class="badge-link inline-block px-6 py-2.5 bg-blue-600 text-white text-xs font-bold rounded-full transition-all shadow-md">
+                    Logistics Client
+                </a>
             </div>
 
             <div class="p-8 border border-gray-100 rounded-3xl bg-[#f4fff6] hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="300">
-                <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
-                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-width="2"></path></svg>
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm p-2">
+                    <img src="aeroht.png" alt="Aerodrop Hotel" class="app-icon">
                 </div>
-                <h2 class="text-2xl font-semibold mb-4">Aerodrop Hotel</h2>
+                <h2 class="text-2xl font-semibold mb-4 text-[#202124]">Aerodrop Hotel</h2>
                 <p class="text-sm text-[#5f6368] mb-8 leading-relaxed">Enterprise management for merchants. Inventory control, order processing, and sales analytics.</p>
-                <span class="px-4 py-2 bg-green-600 text-white text-xs font-bold rounded-full">Merchant Portal</span>
+                
+                <a href="merchant-portal.html" class="badge-link inline-block px-6 py-2.5 bg-green-600 text-white text-xs font-bold rounded-full transition-all shadow-md">
+                    Merchant Portal
+                </a>
             </div>
 
         </div>
